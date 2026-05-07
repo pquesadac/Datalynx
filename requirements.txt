@@ -1,0 +1,24 @@
+# Dependencias del proyecto Datalynx
+# Instalar con: pip install -r requirements.txt
+
+# Motor de IA
+pdfplumber
+scikit-learn
+pandas
+numpy
+
+# Interfaz web
+streamlit
+plotly
+
+# API REST
+fastapi
+uvicorn
+pydantic
+python-multipart
+
+# NOTA: spaCy (NLP avanzado) no es compatible con Python 3.13.
+# El sistema funciona sin él usando regex para la anonimización.
+# Si tienes Python 3.11 o 3.12 puedes instalarlo aparte con:
+#   pip install spacy
+#   python -m spacy download es_core_news_sm

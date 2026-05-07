@@ -1,0 +1,43 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+.env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Variables de entorno / secretos
+.env
+.env.local
+*.env
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Datos sensibles (CVs reales — nunca subir al repo)
+data/cvs_reales/
+*.pdf
+uploads/
