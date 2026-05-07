@@ -71,14 +71,12 @@ def score_color(score: float) -> str:
 
 
 def render_skills_badges(skills: list, css_class: str) -> str:
-    """Genera HTML con badges de habilidades."""
     if not skills:
         return "<em style='color:#999'>Ninguna</em>"
     return " ".join(f'<span class="{css_class}">{s}</span>' for s in skills)
 
 
 def radar_chart(scores: dict, candidato_id: str) -> go.Figure:
-    """Genera un gráfico de radar con el desglose de puntuación."""
     categories = ["Habilidades", "Similitud Semántica", "Experiencia"]
     values = [
         scores["score_habilidades"],
@@ -113,7 +111,6 @@ if "candidatos_personalizados" not in st.session_state:
     st.session_state.candidatos_personalizados = []
 
 
-# ── Encabezado ───────────────────────────────────────────────
 st.markdown("""
 <div class="main-header">
     <h1>🔍 Datalynx</h1>
@@ -123,7 +120,7 @@ st.markdown("""
 
 
 with st.sidebar:
-    st.image("https://via.placeholder.com/200x60/2d3561/ffffff?text=DATALYNX", width=200)
+    st.image("assets/iconoDatalynx.png", width=200)
     st.markdown("---")
     st.header("⚙️ Configurar Oferta")
 
